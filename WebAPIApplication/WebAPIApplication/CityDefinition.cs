@@ -17,7 +17,7 @@ namespace WebAPIApplication
             try
             {
                 //Запрос Яндекс.Геокодер
-                string apikey = "737dd3bf-9479-4896-9e7f-85b5303c8f75";
+                string apikey = "{API-KEY}";
                 HttpWebRequest requestGeo = (HttpWebRequest)WebRequest.Create($"https://geocode-maps.yandex.ru/1.x/?apikey={apikey}&format=json&geocode={cityName}&results=1");
 
                 HttpWebResponse responseGeo = (HttpWebResponse)requestGeo.GetResponse();
